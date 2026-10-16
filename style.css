@@ -1,0 +1,113 @@
+:root {
+  --text-color: #dedeff;
+  --bg-color2: #808080;
+  --bg-color: #202020;
+  --ou-color: black;
+  --var-color: black;
+
+  --gradient-color1: #37373f;
+  --gradient-color2: black;
+  --gradientll: linear-gradient(to top, var(--gradient-color1), var(--gradient-color2));
+  --gradientlm: linear-gradient(to left, var(--gradient-color1), var(--gradient-color2));
+}
+
+@keyframes fade {
+  from {background: black;}
+  to {background: transparent;}
+}
+
+@font-face {
+  font-family: "TekuplusBit";
+  src: url("https://files.catbox.moe/l4q54v.ttf");
+}
+@font-face {
+  font-family: "EnkaDotMincho24";
+  src: url("https://files.catbox.moe/5nsc28.ttf");
+}
+
+body {
+  color: var(--text-color);
+  background: url('https://i.ibb.co/ej/ej.png'), linear-gradient(#000, #c0c0c0), black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-shadow: 0px 0px var(--ou-color), 0px 0px var(--ou-color), 1px 1px var(--ou-color);
+}
+table, p {
+  z-index: 2;
+}
+p {
+  position: relative;
+}
+.bbg {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  box-shadow: 1px 1px 6px black, 1px 1px 6px black;
+}
+
+table, th, td {
+  border: 1px solid black;
+  background: var(--gradientll);
+  padding: 0px 2px;
+}
+th {
+  background: var(--gradientlm);
+}
+
+table {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.enka {
+  font-family: 'EnkaDotMincho24';
+  font-size: 24px;
+  color: red;
+  text-shadow: 1px 1px #0ff;
+}
+.tekup {
+  font-family: 'TekuplusBit';
+  font-size: 12px;
+  text-align: right;
+}
+
+th {
+  font-weight: normal;
+  text-align: center;
+  text-shadow: -1px 0px var(--text-color), 1px 1px var(--ou-color), 2px 1px black;
+}
+
+ol {
+  padding: 0;
+}
+
+li {
+  list-style-type: hiragana;
+  list-style-position: inside;
+  text-align: left;
+}
+
+
+/* rm this if you see the text blurry */
+ol, th {
+  transform: translateX(0.5px);
+}
