@@ -27,7 +27,7 @@
 
 body {
   color: var(--text-color);
-  background: url('https://i.ibb.co/ej/ej.png'), linear-gradient(#000, #c0c0c0), black;
+  background: url('https://i.ibb.co/MyJ6mLw2/polar.png'), linear-gradient(#000, #c0c0c0), black;
   background-repeat: no-repeat;
   background-attachment: fixed;
   text-shadow: 0px 0px var(--ou-color), 0px 0px var(--ou-color), 1px 1px var(--ou-color);
@@ -111,3 +111,7 @@ li {
 ol, th {
   transform: translateX(0.5px);
 }
+
+/* url of a darker wallpaper
+* https://i.ibb.co/MDnkHQJc/polar2.png
+*/
